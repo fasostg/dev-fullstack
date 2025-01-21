@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var aba1 = {
+            titulo: 'Titulo 1',
+            url: 'https://google.com.br'
+        }
+
+        var aba2 = {
+            titulo: 'Titulo 2',
+            url: 'https://salavirtual.pucrs.br/'
+        }
+
+        const abas = [
+            aba1,
+            aba2
+        ];
+
+        for(aba of abas) {
+            document.body.innerHTML += `<li><a href="${aba.url}">${aba.titulo}</a></li>   `
+        }
+
+    </script>
+
+</body>
+</html>

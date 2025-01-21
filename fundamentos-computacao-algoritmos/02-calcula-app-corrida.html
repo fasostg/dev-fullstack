@@ -1,0 +1,25 @@
+<input placeholder="Distancia em KM" id="campoDistancia"/>
+<input placeholder="Tempo em Horas" id="campoTempo"/>
+<button onclick="calcular()">Calcular</button>
+
+<script>
+    function formatarMoeda(valorCorrida) {
+        return valorCorrida.toFixed(2);
+    }
+
+    function calcular() {
+        if (!campoDistancia.value || !campoTempo.value) {
+            alert("Preencha corretamente");
+            return;
+        }
+
+        var tarifaDinamica = 1.4;
+        var distanciaKm = campoDistancia.value * tarifaDinamica;
+        var tempoHoras = campoTempo.value;
+
+        alert(formatarMoeda(distanciaKm*tempoHoras))
+    };
+    /*
+    
+    */
+</script> 

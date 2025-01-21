@@ -1,0 +1,31 @@
+<script>
+
+    class Stack {
+        constructor(elements) {
+            this.cursor = elements.length - 1;
+            this.stack = elements
+        }
+
+        print() {
+            console.log(this.cursor)
+            console.log(this.stack)
+        }
+
+        adicionar(element) {
+            this.stack.push(element)
+            this.cursor = this.stack.length - 1;
+        }
+
+        voltar() {
+            this.cursor -= 1
+        }
+    }
+
+    var pilha = new Stack(['item1', 'item2']);
+    pilha.print()
+    pilha.adicionar('item3')
+    pilha.print()
+    pilha.voltar()
+    pilha.print()
+
+</script>

@@ -1,0 +1,26 @@
+<script>
+    class Queue {
+
+        constructor() {
+            this.elementos = [];
+        }
+
+        print() {
+            console.log(this.elementos);
+        }
+
+        enqueue(element) {
+            this.elementos.push(element);
+        }
+
+        dequeue() {
+            this.elementos.shift()
+        }
+    }
+
+    var requests = new Queue();
+    requests.print();
+    requests.enqueue('javascript.js')
+    requests.print();
+
+</script>
